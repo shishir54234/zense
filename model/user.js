@@ -9,7 +9,7 @@ const InputSchema = new mongoose.Schema({
     password: {
         type: String,
         required: [true, 'must provide name'],
-        maxlength: [20, 'name can not be more than 20 characters'],
+        // maxlength: [20, 'name can not be more than 20 characters'],
     },
   })
   
