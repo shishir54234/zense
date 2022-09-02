@@ -77,3 +77,20 @@ const registerUser = async (event) => {
 
 
 submithehe.addEventListener("click", registerUser)
+
+const lol=document.getElementById('jaiyaxh')
+
+const funcxd=async(event)=>{
+    event.preventDefault()
+    let result = await fetch('/menu', options).then((res) => {
+        console.log(12345)
+        console.log(res)
+        if (res.status === 200) {
+            // everythign went fine
+            alert('Success')
+        } else {
+           alert(result.error)
+       }
+    });
+}
+lol.addEventListener("click", funcxd);

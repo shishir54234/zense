@@ -1,0 +1,23 @@
+<body>
+
+    <div class="card" style="margin-left:5rem;margin-top: 10rem ;width: 18rem;">
+        <% Menu.forEach(function(dish){ %>
+            <div>
+                <img class="card-img-top" src="/img/<%= dish.image %>" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><%= dish.name %></h5>
+                    <p class="card-text">Mayo is free 
+                        <br>
+                        price:<%= dish.price %>
+                    </p>
+                    <a data-dish="<%=JSON.stringify(dish)%>" href="#" class="Add btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+            <% }) %>
+        
+
+    </div>
+</body>
+<script  src="js/app.js" type="module">
+    
+</script>

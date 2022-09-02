@@ -1,0 +1,25 @@
+<section class="empty-cart ">
+    <!-- <div class="text-center container">
+        <h1 class=""> Cart Empty😩</h1>
+        <p>You probably haven't ordered anything yet.</p>
+        
+    </div> -->
+    <div class="order container mx-auto">
+        <div class="flex items-center border-bottom">
+            <img class='d-inline' src="/img/shopping-bag.png" width="100" height="100">
+            <h1 class="d-inline">Order Summary</h1>
+        </div>
+        <div class="pizza-list">
+            <% for(let dish of Object.values(session.cart.items)) { %>
+                <div class="flex items-center my-8">
+
+
+                </div>
+
+
+            <% } %>
+
+        </div>
+    </div>
+
+</section>
